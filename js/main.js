@@ -1,11 +1,53 @@
 
+/*function celsiusToFahrenheit() {
+    const celsius = (celsius * 9 / 5) + 32;
+    alert("Hoy estamos a" + " " + firstTemp + "ºC");
 
+}
 
+function fahrenheitToCelsius() {
+    const fahrenheit = (fahrenheit - 32) * 5 / 9;
+    alert("Hoy estamos a" + " " + secondTemp + "ºF");
 
+}*/
 
+function temperature1 (celsius){
+    alert("Hoy estamos a" + " " + celsius + "ºC");
+}
 
+function temperature2 (fahrenheit){
+    alert("Hoy estamos a" + " " + fahrenheit + "ºF");
+}
 
+alert("Se bienvenido al conversor de temperatura ºC a ºF");
 
+let tempSelection = parseInt(prompt("Por favor escoja de la lista la opción que desea convertir: \n\.1 Celsius \n\.2 Fahrenheit \n\.0 Salir"));
+
+switch (tempSelection) {
+    case 0:
+        alert ("Muchas gracias por usar The Thermostat.");
+        break;
+        case 1:
+            let celsius = (celsius * 9 / 5) + 32;
+            celsius = parseInt(prompt("Ingrese su cantidad en Celsius"));
+            temperature1 (celsius); 
+        
+        break;
+        case 2:
+            let fahrenheit = (fahrenheit - 32) * 5 / 9;
+            fahrenheit = parseInt(prompt("Ingrese su cantidad en Fahrenheit"));
+            temperature2 (fahrenheit);
+        break;
+
+    default:
+        alert ("Lo sentimos pero esa opción no es válida. Intente usando 1, 2 o 0");
+        break;
+}
+
+/*alert("Se bienvenido al conversor de temperatura ºC a ºF")
+
+const tempSelection = parseInt(prompt("Por favor escoja de la lista la opción que desea convertir: \n\.1 Celsius \n\.2 Fahrenheit \n\.0 Salir"));
+*/
 
 
 
