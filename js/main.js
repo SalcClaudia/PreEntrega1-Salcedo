@@ -12,11 +12,11 @@ function fahrenheitToCelsius() {
 }*/
 
 function temperature1 (celsius){
-    alert("Hoy estamos a" + " " + celsius + "ºC");
+    alert("Hoy estamos a" + " " + (celsius * 9 / 5) + 32 + "ºC");
 }
 
 function temperature2 (fahrenheit){
-    alert("Hoy estamos a" + " " + fahrenheit + "ºF");
+    alert("Hoy estamos a" + " " + (fahrenheit - 32) * 5 / 9 + "ºF");
 }
 
 alert("Se bienvenido al conversor de temperatura ºC a ºF");
@@ -28,13 +28,13 @@ switch (tempSelection) {
         alert ("Muchas gracias por usar The Thermostat.");
         break;
         case 1:
-            let celsius = (celsius * 9 / 5) + 32;
+            let celsius;
             celsius = parseInt(prompt("Ingrese su cantidad en Celsius"));
             temperature1 (celsius); 
         
         break;
         case 2:
-            let fahrenheit = (fahrenheit - 32) * 5 / 9;
+            let fahrenheit
             fahrenheit = parseInt(prompt("Ingrese su cantidad en Fahrenheit"));
             temperature2 (fahrenheit);
         break;
