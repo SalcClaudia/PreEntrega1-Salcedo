@@ -2,12 +2,12 @@
 
 function temperature1 (celsius){
     let celsiusToFahrenheit = (celsius * 9/5) + 32;
-    alert("Hoy estamos a" + " " + celsiusToFahrenheit + "ºF");
+    alert("Hoy estamos a" + " " + celsiusToFahrenheit.toFixed (1) + "ºF");
 }
 
 function temperature2 (fahrenheit){
     let fahrenheitToCelsius = (fahrenheit - 32) * 5/9;
-    alert("Hoy estamos a" + " " + fahrenheitToCelsius + "ºC");
+    alert("Hoy estamos a" + " " + fahrenheitToCelsius.toFixed (1) + "ºC");
 }
 
 alert("Se bienvenido al conversor de temperatura ºC a ºF");
